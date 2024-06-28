@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Meet the Developer!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<style>
+    .myimg {
+        width: 50px;
+        height: 50px;
+        border: 2px solid black;
+        border-radius: 25px;
+    }
+</style>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <!-- Logo at the top-left corner -->
+        <div class="logo">
+            <img class="myimg" src="{{ url_for('static', filename='favicon.png') }}" alt="">
+        </div>
+
+        <a class="navbar-brand" href="/">WeCare</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact">Symptom-List</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/developer">Developer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/blog">Blog</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<div class="container my-4 mt-4">
+    <h6>About Samriddhi Mishra: 4th-year college student</h6>
+    <h5>Meet the Developer</h5>
+
+    <p>Hello, I'm Samriddhi Mishra, your AI and Machine Learning enthusiast with a passion for leveraging technology to improve lives. Currently a 4th-year college student at VIT, I have been exploring the exciting intersections of artificial intelligence and healthcare.</p>
+
+    <h5>My Journey</h5>
+    <p>My journey into the world of AI and ML began with a curiosity-driven exploration during my early college years. Guided by a strong academic foundation in computer science and a dedication to innovation, I've embarked on projects that blend cutting-edge technology with real-world applications.</p>
+
+    <h5>Academic Pursuits</h5>
+    <p>As a student at VIT, I've had the opportunity to delve deep into various aspects of machine learning, data analysis, and their potential to revolutionize healthcare. I believe in the transformative power of AI to make healthcare more accessible and personalized.</p>
+
+    <h5>Commitment to Excellence</h5>
+    <p>My work is defined by a commitment to excellence and a drive to create solutions that are not only technically robust but also user-centric and impactful. From developing predictive models to exploring new AI algorithms, I aim to contribute to advancements that benefit society.</p>
+
+    <h5>Passion for Health Tech</h5>
+    <p>The development of [Your Website Name] embodies my passion for health tech innovation. I envision a future where AI enhances healthcare outcomes, providing individuals with valuable insights and empowering them to make informed decisions about their health.</p>
+
+    <h5>Join Me on this Journey</h5>
+    <p>I invite you to explore WeCare and join me on this exciting journey at the intersection of AI and healthcare. Together, we can harness the potential of technology to create a healthier and more informed society.</p>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

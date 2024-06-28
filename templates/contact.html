@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Check Out the list!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  </head>
+  <style>
+            .myimg {
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+            border-radius: 25px;
+        }
+        table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+          <!-- Logo at the top-left corner -->
+          <div class="logo">
+              <img class="myimg" src="{{ url_for('static', filename='favicon.png') }}" alt="">
+          </div>
+
+          <a class="navbar-brand" href="/">WeCare</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="/">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="/about">About</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="/contact">Symptom-List</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="/developer">Developer</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="/blog">Blog</a>
+                  </li>
+              </ul>
+              <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+          </div>
+      </div>
+  </nav>
+    <div class="container my-4 mt-4">
+
+        <h3>Symptom List</h3>
+        <p>Refer to the table below for a list of symptoms you can input:</p>
+    
+        <table>
+          <thead>
+            <tr>
+              <th>Symptom</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>itching</td></tr>
+            <tr><td>skin_rash</td></tr>
+            <tr><td>nodal_skin_eruptions</td></tr>
+            <tr><td>continuous_sneezing</td></tr>
+            <tr><td>shivering</td></tr>
+            <tr><td>chills</td></tr>
+            <tr><td>joint_pain</td></tr>
+            <tr><td>stomach_pain</td></tr>
+            <tr><td>acidity</td></tr>
+            <tr><td>ulcers_on_tongue</td></tr>
+            <tr><td>muscle_wasting</td></tr>
+            <tr><td>vomiting</td></tr>
+            <tr><td>burning_micturition</td></tr>
+            <tr><td>spotting_urination</td></tr>
+            <tr><td>fatigue</td></tr>
+            <tr><td>weight_gain</td></tr>
+            <tr><td>anxiety</td></tr>
+            <tr><td>cold_hands_and_feets</td></tr>
+            <tr><td>mood_swings</td></tr>
+            <tr><td>weight_loss</td></tr>
+            <tr><td>restlessness</td></tr>
+            <tr><td>lethargy</td></tr>
+            <tr><td>patches_in_throat</td></tr>
+            <tr><td>irregular_sugar_level</td></tr>
+            <tr><td>cough</td></tr>
+            <tr><td>high_fever</td></tr>
+            <tr><td>sunken_eyes</td></tr>
+            <tr><td>breathlessness</td></tr>
+            <tr><td>sweating</td></tr>
+            <tr><td>dehydration</td></tr>
+            <tr><td>indigestion</td></tr>
+            <tr><td>headache</td></tr>
+            <tr><td>yellowish_skin</td></tr>
+            <tr><td>dark_urine</td></tr>
+            <tr><td>nausea</td></tr>
+            <tr><td>loss_of_appetite</td></tr>
+            <tr><td>pain_behind_the_eyes</td></tr>
+            <tr><td>back_pain</td></tr>
+            <tr><td>constipation</td></tr>
+            <tr><td>abdominal_pain</td></tr>
+            <tr><td>diarrhoea</td></tr>
+            <tr><td>mild_fever</td></tr>
+            <tr><td>yellow_urine</td></tr>
+            <tr><td>yellowing_of_eyes</td></tr>
+            <tr><td>acute_liver_failure</td></tr>
+            <tr><td>fluid_overload</td></tr>
+            <tr><td>swelling_of_stomach</td></tr>
+            <tr><td>swelled_lymph_nodes</td></tr>
+            <tr><td>malaise</td></tr>
+            <tr><td>blurred_and_distorted_vision</td></tr>
+            <tr><td>phlegm</td></tr>
+            <tr><td>throat_irritation</td></tr>
+            <tr><td>redness_of_eyes</td></tr>
+            <tr><td>sinus_pressure</td></tr>
+            <tr><td>runny_nose</td></tr>
+            <tr><td>congestion</td></tr>
+            <tr><td>chest_pain</td></tr>
+            <tr><td>weakness_in_limbs</td></tr>
+            <tr><td>fast_heart_rate</td></tr>
+            <tr><td>pain_during_bowel_movements</td></tr>
+            <tr><td>pain_in_anal_region</td></tr>
+            <tr><td>bloody_stool</td></tr>
+            <tr><td>irritation_in_anus</td></tr>
+            <tr><td>neck_pain</td></tr>
+            <tr><td>dizziness</td></tr>
+            <tr><td>cramps</td></tr>
+            <tr><td>bruising</td></tr>
+            <tr><td>obesity</td></tr>
+            <tr><td>swollen_legs</td></tr>
+            <tr><td>swollen_blood_vessels</td></tr>
+            <tr><td>puffy_face_and_eyes</td></tr>
+            <tr><td>enlarged_thyroid</td></tr>
+            <tr><td>brittle_nails</td></tr>
+            <tr><td>swollen_extremeties</td></tr>
+            <tr><td>excessive_hunger</td></tr>
+            <tr><td>extra_marital_contacts</td></tr>
+            <tr><td>drying_and_tingling_lips</td></tr>
+            <tr><td>slurred_speech</td></tr>
+            <tr><td>knee_pain</td></tr>
+            <tr><td>hip_joint_pain</td></tr>
+            <tr><td>muscle_weakness</td></tr>
+            <tr><td>stiff_neck</td></tr>
+            <tr><td>swelling_joints</td></tr>
+            <tr><td>movement_stiffness</td></tr>
+            <tr><td>spinning_movements</td></tr>
+            <tr><td>loss_of_balance</td></tr>
+            <tr><td>unsteadiness</td></tr>
+            <tr><td>weakness_of_one_body_side</td></tr>
+            <tr><td>loss_of_smell</td></tr>
+            <tr><td>bladder_discomfort</td></tr>
+            <tr><td>foul_smell_of_urine</td></tr>
+            <tr><td>continuous_feel_of_urine</td></tr>
+            <tr><td>passage_of_gases</td></tr>
+            <tr><td>internal_itching</td></tr>
+            <tr><td>toxic_look_(typhos)</td></tr>
+            <tr><td>depression</td></tr>
+            <tr><td>irritability</td></tr>
+            <tr><td>muscle_pain</td></tr>
+            <tr><td>altered_sensorium</td></tr>
+            <tr><td>red_spots_over_body</td></tr>
+            <tr><td>belly_pain</td></tr>
+            <tr><td>abnormal_menstruation</td></tr>
+            <tr><td>dischromic_patches</td></tr>
+            <tr><td>watering_from_eyes</td></tr>
+            <tr><td>increased_appetite</td></tr>
+            <tr><td>polyuria</td></tr>
+            <tr><td>family_history</td></tr>
+            <tr><td>mucoid_sputum</td></tr>
+            <tr><td>rusty_sputum</td></tr>
+            <tr><td>lack_of_concentration</td></tr>
+            <tr><td>visual_disturbances</td></tr>
+            <tr><td>receiving_blood_transfusion</td></tr>
+            <tr><td>receiving_unsterile_injections</td></tr>
+            <tr><td>coma</td></tr>
+            <tr><td>stomach_bleeding</td></tr>
+            <tr><td>distention_of_abdomen</td></tr>
+            <tr><td>history_of_alcohol_consumption</td></tr>
+            <tr><td>fluid_overload</td></tr>
+            <tr><td>blood_in_sputum</td></tr>
+            <tr><td>prominent_veins_on_calf</td></tr>
+            <tr><td>palpitations</td></tr>
+            <tr><td>painful_walking</td></tr>
+            <tr><td>pus_filled_pimples</td></tr>
+            <tr><td>blackheads</td></tr>
+            <tr><td>scurring</td></tr>
+            <tr><td>skin_peeling</td></tr>
+            <tr><td>silver_like_dusting</td></tr>
+            <tr><td>small_dents_in_nails</td></tr>
+            <tr><td>inflammatory_nails</td></tr>
+            <tr><td>blister</td></tr>
+            <tr><td>red_sore_around_nose</td></tr>
+            <tr><td>yellow_crust_ooze</td></tr>
+            <tr><td>prognosis</td></tr>
+          </tbody>
+        </table>
+    
+
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>

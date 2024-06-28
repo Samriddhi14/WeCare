@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WeCare</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+      body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f8f9fa;
+      }
+      .myimg {
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+            border-radius: 25px;
+        }
+      .container {
+        background-color: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      h3 {
+        border-bottom: 2px solid #007bff;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+      }
+      p {
+        font-size: 1.1em;
+        line-height: 1.6;
+      }
+    </style>
+  </head>
+  <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container-fluid">
+              <!-- Logo at the top-left corner -->
+              <div class="logo">
+                  <img class="myimg" src="{{ url_for('static', filename='favicon.png') }}" alt="">
+              </div>
+  
+              <a class="navbar-brand" href="/">WeCare</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="/">Home</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="/about">About</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="/contact">Symptom-List</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="/developer">Developer</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="/blog">Blog</a>
+                      </li>
+                  </ul>
+                  <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+              </div>
+          </div>
+      </nav>
+    <div class="container my-4 mt-4">
+      <h3>About Us</h3>
+      <p>Welcome to WeCare - where technology and health come together for a healthier future.</p>
+
+      <h3>Our Vision</h3>
+      <p>We believe that healthcare information should be accessible to everyone. We started with the simple idea of empowering individuals with the knowledge and tools needed to take charge of their health.</p>
+
+      <h3>Our Mission</h3>
+      <p>Our mission at WeCare is to provide a user-friendly platform that uses artificial intelligence and machine learning to help you identify potential health issues based on your symptoms, while also offering extensive educational resources to enhance your health knowledge.</p>
+
+      <h3>How We Do It</h3>
+      <p>We use a sophisticated machine learning model trained on a vast dataset of symptoms and diseases. By entering your symptoms, our system offers accurate predictions about possible illnesses, helping you make informed health decisions.</p>
+
+      <h3>Your Well-being, Our Priority</h3>
+      <p>Your health is our top concern. We know healthcare can be complex, so we offer not only accurate predictions but also detailed information about each disease, including descriptions, recommended precautions, medications, dietary advice, and workout tips to support your health journey.</p>
+
+      <p>Thank you for choosing WeCare as your trusted health companion. We are here to empower you with knowledge, support, and a brighter, healthier future.</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>
